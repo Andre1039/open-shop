@@ -3,7 +3,7 @@
     src: url(../fonts/NotoSans/NotoSans-Regular.ttf);
 } 
 
-/* @font-face{
+@font-face{
     font-family: 'Font Awesome';
     src: url(../fonts/FontAwesome/fa-light-300.woff2);
     font-weight: 300;
@@ -31,10 +31,10 @@
     font-family: 'Font Awesome';
     src: url(../fonts/FontAwesome/fa-solid-900.woff2);
     font-weight: 900;
-} */
+}
 
-/* .fa{
+.fa{
     display: inline-block;
     font-family: 'Font Awesome';
     font-style: normal;
-} */
+}
