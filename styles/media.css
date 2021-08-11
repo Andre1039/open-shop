@@ -10,6 +10,20 @@
         content: url(../images/Logo-dark.png);
     }
 
+    .prenav__languages{
+        background: var(--black);
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    .dropdown-item, .dropdown-divider{
+        color: var(--white);
+    }
+
+    .dropdown-item:hover{
+        color: var(--white);
+        background: var(--black);
+    }
+
     .footer{
         background: var(--black);
     }
@@ -46,7 +60,7 @@
         color: var(--white);
     }
 
-    .header__slide-btn{
+    .header__slide-btn, .main__apple-btn{
         background: var(--gray);
         color: var(--white);
         border: var(--border);
@@ -64,13 +78,13 @@
         box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
     }
 
-    .btn, .main__cellphone-link, .main__playstation-btn{
+    .btn, .main__cellphone-link, .main__playstation-btn, .main__vr-btn{
         background: var(--gray);
         color: var(--white);
         border: var(--border);
     }
 
-    .main__title, .main__cellphone-description, .main__cellphone-price, .main__computerslaptops-description, .main__computerslaptops-price, .main__playstation-title, .main__seller-description, .main__seller-price, .main__rectangle, .header__list-link, .header__link-span{
+    .main__title, .main__cellphone-description, .main__cellphone-price, .main__computerslaptops-description, .main__computerslaptops-price, .main__playstation-title, .main__seller-description, .main__seller-price, .main__rectangle, .header__list-link, .header__link-span, .main__apple-title, .main__apple-list, .main__apple-price, .main__apple-ad, .main__vr-title, .main__vr-description, .main__card-icon{
         color: var(--white);
     }
 
@@ -102,6 +116,9 @@
         background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
     }
 
+    .main__apple-link.active{
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
+    }
 }
 
 @media(max-width:1400px){
@@ -130,9 +147,26 @@
     .header__slide-img{
         width: 50%;
     }
+
+    .main__vr-img{
+        width: 100%;
+    }
+
+    .footer__icons{
+        flex-wrap: wrap;
+    }
+
+    .footer__form{
+        margin-right: 30px;
+    }
 }
 
 @media(max-width:994px){
+    .prenav{
+        min-height: 60px;
+        height: 100%;
+    }
+
     .footer__logo{
         margin: 0 0 20px 0;
     }
@@ -206,6 +240,41 @@
     .main__playstation-content{
         top: 50px;
     }
+
+    .main__apple-div{
+        flex-direction: column;
+    }
+
+    .main__apple-div{
+        flex-direction: column;
+    }
+
+    .main__apple-tab{
+        padding: 0 !important;
+        flex-direction: column;
+    }
+
+    .main__apple-img{
+        margin: 0 auto;
+    }
+
+    .main__vr-title{
+        margin: 0;
+        text-align: center;
+    }
+
+    .main__vr-description{
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .main__vr-content{
+        position: static;
+    }
+
+    .main__apple-links{
+        flex-direction: column;
+    }
 }
 
 @media(max-width:770px) {
@@ -275,11 +344,44 @@
         margin-top: 20px;
     }
 
+    .header__slide-content{
+        flex-direction: column;
+    }
+
+    .header__slide-description{
+        margin-top: 20px;
+    }
+
+    .header__slide-left{
+        margin-bottom: 40px;
+    }
+
+    .header__slide-img{
+        width: 100%;
+    }
+
     .name1 {
         top: 80px;
     }
 
     .price1 {
         top: 100px;
+    }
+
+    .main__apple-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__form{
+        margin: 0;
+    }
+
+    .main__apple-content{
+        margin: 0;
+    }
+
+    .main__apple-btn:first-of-type{
+        margin: 0 0 10px 0;
     }
 }

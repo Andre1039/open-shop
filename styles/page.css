@@ -5,11 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none !important;
-    list-style: none;
+    /* list-style: none; */
 }
 
 :root{
     --black: #313131;
+    --black1: #000000;
     --white: #FFFFFF;
     --Noto-normal: 'NotoSans-normal';
 }
@@ -204,6 +205,10 @@ hr{
     content: url(../images/Logo-light.png);
 }
 
+.header__list-cell, .header__list-tablets{
+    list-style: none;
+}
+
 /* .header__nav-btn::before{
     content: '\f002';
     font-size: 16px;
@@ -275,66 +280,6 @@ hr{
     font-size: 15px;
 }
 
-.header__carousel{
-    margin-top: 50px;
-}
-
-.header__slide-content{
-    display: flex;
-}
-
-
-
-.header__slide-description{
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: 0.05em;
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    font-weight: 600;
-    margin-top: 113px;
-    max-width: 624px;
-    width: 100%;
-    text-align: center;
-}
-
-.header__slide-left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header__slide-btn{
-    display: flex;
-    font-size: 18px;
-    line-height: 25px;
-    color: var(--white);
-    font-family: var(--Noto-normal);
-    width: 190px;
-    justify-content: center;
-    padding: 12px 0;
-    background: var(--black);
-    margin-top: 121px;
-}
-
-.header__slide-btn:hover{
-    color: var(--white);
-}
-
-.carousel-indicators [data-bs-target]{
-    background: #ABABAB;
-    width: 10px;
-    height: 10px;
-    border: none;
-    border-radius: 50%;
-}
-
-.carousel-indicators [data-bs-target].active{
-    background: var(--black);
-    width: 15px;
-    height: 15px;
-}
-
 
 
 /* HEADER END */
@@ -346,342 +291,161 @@ hr{
 
 
 .main{
-    margin-top: 50px;
+    margin: 50px 0 70px 0;
 }
 
-/* .main__cards{
-    display: grid;
-    gap: 30px;
-} */
-
-.main__left-card{
-    position: relative;
+.main__apple-iphone{
+    margin-bottom: 60px;
 }
 
-span{
-    position: absolute;
-}
-
-.main__card-span{
-    color: var(--white);
-    font-family: var(--Noto-normal);
-    font-size: 20px;
-    line-height: 30px;
-    background: var(--black);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    left: 20px;
-    top: 20px;
+.main__apple-link{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
-.main__card-name{
-    color: var(--black);
-    font-size: var(--Noto-normal);
+.main__apple-link.active{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main__link-img{
+    width: 100%;
+}
+
+.main__apple-links{
+    align-content: space-evenly;
+}
+
+.main__apple-item{
+    height: max-content;
+    width: 100%;
+}
+
+.main__apple-icon::before{
+    content: '\f07a';
+}
+
+.main__apple-title{
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--black1);
+    font-family: var(--Noto-normal);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.main__apple-price{
+    color: var(--black1);
+    font-size: 24px;
+    line-height: 30px;
+    font-family: var(--Noto-normal);
     font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    left: 20px;
-    bottom: 55px;
+    margin-bottom: 20px;
 }
 
-.main__card-price{
-    color: var(--black);
+.main__apple-ad{
+    color: var(--black1);
+    font-size: 24px;
+    line-height: 30px;
     font-family: var(--Noto-normal);
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
-    left: 20px;
-    bottom: 15px;
-}
-
-.main__left-card{
-    height: 500px;
-    filter: drop-shadow(-10px 5px 4px rgba(0, 0, 0, 0.25));
-    background-repeat: no-repeat;
-    grid-column: span 2;
-
-}
-
-.main__right-card{
-    height: 235px;
-    grid-column: span 1;
-    position: relative;
-    filter: drop-shadow(-10px 0px 4px rgba(0, 0, 0, 0.15));
-}
-
-.main__card-name1{
-    color: var(--black);
-    font-size: var(--Noto-normal);
     font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    top: 15px;
-    left: 20px;
-    
+    margin-bottom: 10px;
 }
 
-.main__card-price1{
-    top: 73px;
-    left: 20px;
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
+.main__apple-description{
+    margin-bottom: 10px;
 }
 
-.main__card-price2{
-    top: 55px;
-    left: 20px;
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
+.main__apple-list{
+    margin-bottom: 30px;
 }
 
-.main__card-span1{
-    left: 20px;
-    bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    font-family: var(--Noto-normal);
-    font-size: 20px;
-    line-height: 30px;
-    background: var(--black);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}    
-
-
-.btn{
+.main__apple-btn{
     font-size: 20px;
     line-height: 30px;
     color: var(--white);
     font-family: var(--Noto-normal);
     width: 190px;
+    display: flex;
     justify-content: center;
-    padding: 12px 0;
+    padding: 13px;
     background: var(--black);
-    margin: 30px auto 70px auto;
-    display: flex;
-    border-radius: 0;
 }
 
-.btn:hover{
+.main__apple-btn:first-of-type{
+    margin-right: 30px;
+}
+
+.main__apple-btn:hover{
     color: var(--white);
 }
 
-.main__title{
-    margin-bottom: 30px;
-    font-size: 36px;
-    line-height: 49px;
-    font-family: var(--Noto-normal);
-    font-weight: 600;
-    color: var(--black);
-}
-
-.main__cellphone-cards{
-    display: flex;
-    justify-content: space-between;
-}
-
-.main__cellphone-description{
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.main__cellphone-price{
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.main__cellphone-card{
-    width: 300px;
-    height: 330px;
-    position: relative;
-    transition: 0.5s;
-}
-
-.main__cellphone-link:hover{
-    color: var(--white);
-}
-
-.main__cellphone-card:hover .main__cellphone-link{
+.main__apple-buttons{
     display: flex;
 }
 
-.main__cellphone-card:hover .main__card-icon::before{
-    display: inline-block;
-}
-
-.main__cellphone-card:hover{
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-}
-
-.main__cellphone-text{
-    width: 100%;
-    position: absolute;
-    top: 226px;
-}
-
-.main__cellphone-link{
-    font-size: 14px;
-    line-height: 19px;
-    color: var(--white);
-    font-family: var(--Noto-normal);
-    background: var(--black);
-    width: 100px;
-    display: none;
-    justify-content: center;
-    padding: 5px 0;
-    margin: 0 auto 18px auto;
-}
-
-.main__card-icon::before{
-    content: '\f004';
-    position: absolute;
-    top: 17.5px;
-    right: 16px;
-    display: none;
-}
-
-.main__card-icon{
+.main__apple-icon{
     font-size: 17px;
-}
-
-.main__computerslaptops-card{
-    width: 300px;
-    position: relative;
-}
-
-.main__computerslaptops-text{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
-.main__computerslaptops-description{
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.main__computerslaptops-price{
-    font-size: 14px;
-    line-height: 19px;
-    color: var(--black);
-    font-family: var(--Noto-normal);
     font-weight: 300;
-    margin-bottom: 17px;
-    text-align: center;
+    margin-right: 11px;
 }
 
-.main__computerslaptops-cards{
-    display: flex;
-    justify-content: space-between;
+.main__apple-img{
+    max-height: 410px;
+    height: 100%;
+    max-width: 409px;
+    width: 100%;
+    margin: auto 0;
 }
 
-.main__playstation{
-    position: relative;
-    margin-bottom: 70px;
+.main__apple-content{
+    margin-left: 31px;
 }
 
-.main__psp::before{
-    content: url(../images/PSP.png);
-}
-
-.main__playstation-title{
-    margin: 20px 0 70px 0;
+.main__vr-title{
     font-size: 48px;
     line-height: 65px;
     color: var(--black);
     font-family: var(--Noto-normal);
     font-weight: 600;
+    margin-bottom: 39px;
+    margin-left: -35px;
 }
 
-.main__playstation-content{
-    position: absolute;
-    top: 94px;
-    left: 20px;
+.main__vr-description{
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--black);
+    font-family: var(--Noto-normal);
+    margin-bottom: 116px;
+    max-width: 454px;
+    width: 100%;
 }
 
-.main__playstation-btn{
-    display: flex;
+.main__vr-btn{
     font-size: 18px;
     line-height: 25px;
     color: var(--white);
     font-family: var(--Noto-normal);
     background: var(--black);
     width: 190px;
+    display: flex;
     justify-content: center;
     padding: 12px 0;
+    margin: 0 auto;
 }
 
-.main__seller-card{
-    width: 300px;
+.main__vr-btn:hover{
+    color: var(--white);
+}
+
+.main__vr{
     position: relative;
 }
 
-.main__seller-text{
+.main__vr-content{
     position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.main__seller-description{
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.main__seller-price{
-    font-size: 14px;
-    line-height: 19px;
-    font-family: var(--Noto-normal);
-    font-weight: 300;
-    color: var(--black);
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.main__seller-cards{
-    display: flex;
-    justify-content: space-between;
-}
-
-.main__rectangle{
-    font-size: 12px;
-    line-height: 16px;
-    color: var(--black);
-    font-family: var(--Noto-normal);
-    margin: 54px 0 0 auto;
-    text-align: end;
+    top: 20px;
+    right: 31px;
 }
 
 
@@ -703,8 +467,9 @@ span{
     padding: 30px 0 45px 0;
 }
 
-.footer__links{
+.footer__links, .footer__icons{
     display: flex;
+    list-style: none;
 }
 
 .footer__icons{
